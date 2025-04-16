@@ -1,0 +1,93 @@
+.footer {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #001F54, #FF69B4); /* Navy blue to pink */
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+    z-index: 0;
+    animation: rotateGlow 20s linear infinite;
+  }
+  
+  @keyframes rotateGlow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer-content h2 {
+    color: darkblue; /* Navy blue Edify text */
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 15px 0;
+    z-index: 2;
+  }
+  
+  .footer-links li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links li:hover {
+    color: #ffccff;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+    z-index: 2;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 22px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ffe6f0;
+    transform: scale(1.3);
+  }
+  
+  /* Media Query */
+  @media (max-width: 600px) {
+    .footer {
+      text-align: center;
+    }
+  }
+  

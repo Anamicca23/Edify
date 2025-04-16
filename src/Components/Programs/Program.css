@@ -1,0 +1,93 @@
+.programs {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .program {
+    flex-basis: 31%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .program img {
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+    transition: transform 0.6s ease, filter 0.4s ease;
+  }
+  
+  .program:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(33, 46, 160, 0.3);
+  }
+  
+  .program:hover img {
+    transform: scale(1.07);
+    filter: brightness(1.15);
+  }
+  
+  .caption {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(33, 46, 160, 0.6), rgba(0, 204, 255, 0.3));
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .caption img {
+    width: 60px;
+    margin-bottom: 14px;
+    animation: shimmer 1.5s infinite linear alternate;
+  }
+  
+  .program:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  @keyframes shimmer {
+    0% {
+      filter: drop-shadow(0 0 5px #00ccff);
+      transform: scale(1);
+    }
+    100% {
+      filter: drop-shadow(0 0 12px #7a7aff);
+      transform: scale(1.05);
+    }
+  }
+  
+  /* ---- Responsive ---- */
+  @media (max-width: 650px) {
+    .programs {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .program {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .caption img {
+      width: 50px;
+    }
+  }
+  

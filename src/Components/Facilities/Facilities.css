@@ -1,0 +1,157 @@
+/* Facilities section wrapper */
+.facilities {
+    padding: 60px 30px;
+    background: #e0f7ff; /* very light sky blue */
+    min-height: 100vh;
+    text-align: center;
+    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styling */
+  .facilities-heading {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #001f3f;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Grid layout for facility cards */
+  .facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Individual card styling */
+  .facility-item {
+    background: linear-gradient(130deg, darkblue,rgb(2, 2, 112), rgb(165, 165, 165)); /* navy blue to pink-red */
+    border-radius: 20px;
+    padding: 40px 25px;
+    color: #fff;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #666464;
+  }
+  
+  /* Hover animation with glowing border */
+  .facility-item::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    z-index: 0;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #dd0505, #eb083d, #665ed9); /* yellow-red-orange */
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    filter: blur(10px);
+  }
+  
+  .facility-item:hover::before {
+    opacity: 1;
+  }
+  
+  .facility-item:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  }
+  
+  /* Ensure content stays above the glowing layer */
+  .facility-item * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Icon styling */
+  .facility-item svg {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: transform 0.4s ease;
+  }
+  
+  .facility-item:hover svg {
+    transform: scale(1.15) rotate(4deg);
+  }
+  
+  /* Title text */
+  .facility-item h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Description text */
+  .facility-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f2f2f2;
+    opacity: 0.9;
+  }
+  
+  /* Explore button container */
+  .facilities-btn-wrapper {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  /* Explore button */
+  .explore-btn {
+    background: linear-gradient(90deg, #1f3bc9, #517bff);
+    color: #fff;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  /* Hover glow effect */
+  .explore-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgb(4, 47, 220),rgb(0, 110, 255), rgb(12, 234, 238));
+    z-index: -1;
+    border-radius: 50px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    filter: blur(8px);
+  }
+  
+  .explore-btn:hover::before {
+    opacity: 1;
+  }
+  
+  .explore-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Arrow animation */
+  .explore-btn .arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .explore-btn:hover .arrow {
+    transform: translateX(4px);
+  }
+  

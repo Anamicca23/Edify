@@ -1,0 +1,105 @@
+.title {
+    text-align: center;
+    margin: 100px 0 40px;
+    position: relative;
+    animation: fadeInSlide 1.2s ease forwards;
+    opacity: 0;
+  }
+  
+  .title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 6px;
+    width: 60px;
+    background: linear-gradient(to right, #212ea0, #00ccff);
+    border-radius: 10px;
+    animation: growBar 1s ease forwards;
+  }
+  
+  .title h2 {
+    font-size: 42px;
+    color: #000f38;
+    margin-top: 20px;
+    font-weight: 800;
+    text-transform: none;
+    background: linear-gradient(to right, #212ea0, #00ccff);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    animation: popIn 1.4s ease forwards;
+  }
+  
+  .title p {
+    font-size: 16px;
+    color: #555;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 8px;
+    animation: fadeInText 1.6s ease forwards;
+    opacity: 0;
+  }
+  
+  /* 🌀 Fancy Animations */
+  @keyframes fadeInSlide {
+    0% {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes growBar {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 60px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes popIn {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 💻 Responsive love */
+  @media (max-width: 600px) {
+    .title h2 {
+      font-size: 28px;
+    }
+  
+    .title::before {
+      width: 40px;
+    }
+  }
+  

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f3f4f6, #e0f7fa);
+  transition: background 0.6s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.btn {
+  background: white;
+  color: #212121;
+  padding: 14px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn.dark-btn {
+  background: linear-gradient(135deg, #212ea0, #5a7dff);
+  color: white;
+}
+
+.btn.dark-btn:hover {
+  background: linear-gradient(135deg, #5a7dff, #00f5c3);
+  color: #000;
+  transform: scale(1.05);
+}
+
+.btn img {
+  width: 20px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover img {
+  transform: translateX(3px);
+}
+
+/* ----media query----- */
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .btn {
+    padding: 14px 22px;
+  }
+}

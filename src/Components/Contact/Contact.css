@@ -1,0 +1,138 @@
+.contact {
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(235, 235, 254, 0.9)); /* Soft gradient background */
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 30px;
+    transition: background 0.3s ease-in-out; /* Smooth background transition */
+}
+
+.contact-col {
+    flex-basis: 48%;
+    color: #676767;
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+.contact-col h3 {
+    font-size: 26px;
+    color: #000F38;
+    font-weight: 600; /* Bold font for headings */
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.contact-col h3:hover {
+    color: #ff5f6d; /* Hover effect on heading */
+}
+
+.contact-col h3 img {
+    width: 35px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-col h3:hover img {
+    transform: scale(1.1); /* Slight scale on hover */
+}
+
+.contact-col p {
+    line-height: 1.6;
+    max-width: 480px;
+    color: #555; /* Soft gray for text */
+}
+
+.contact-col ul li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.contact-col ul li img {
+    width: 30px;
+    margin-right: 12px;
+    transition: transform 0.3s ease;
+}
+
+.contact-col ul li:hover img {
+    transform: scale(1.2); /* Slight scale on hover for icons */
+}
+
+.contact form input, .contact form textarea {
+    display: block;
+    width: 100%;
+    background: #EBECFE;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact form input:focus, .contact form textarea:focus {
+    border-color: #ff5f6d; /* Focused input borders with a vibrant color */
+}
+
+.contact-col span {
+    display: block;
+    margin: 25px 0;
+    font-size: 16px;
+    color: #777; /* Light gray color for additional text */
+}
+
+/* --- Submit Button Styles --- */
+.contact form button {
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #ff5f6d, #ff9a8b); /* Gradient background */
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact form button:hover {
+    transform: translateY(-5px); /* Slight elevation on hover */
+    box-shadow: 0 10px 30px rgba(255, 99, 71, 0.2); /* Soft glow effect */
+}
+
+/* ----media-query--- */
+@media (max-width: 700px) {
+    .contact {
+        display: block;
+        padding: 20px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(235, 235, 254, 0.9)); /* Gradient background */
+    }
+
+    .contact-col {
+        padding: 20px;
+    }
+
+    .contact-col h3 {
+        font-size: 24px;
+    }
+
+    .contact-col p {
+        font-size: 14px;
+    }
+
+    .contact form input, .contact form textarea {
+        padding: 12px;
+    }
+
+    .contact form button {
+        width: 100%;
+        padding: 14px;
+    }
+}

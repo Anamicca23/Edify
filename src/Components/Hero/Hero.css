@@ -1,0 +1,109 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(20, 0, 70, 0.8), rgba(255, 100, 150, 0.8)), 
+                url('../../assets/hero.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInBackground 1.5s ease-out;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 136, 255, 0.15), transparent);
+    animation: moveGlow 12s linear infinite;
+    z-index: 0;
+  }
+  
+  .hero-text {
+    text-align: center;
+    max-width: 800px;
+    z-index: 2;
+    animation: popIn 1.5s ease forwards;
+    opacity: 0;
+  }
+  
+  .hero-text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff8a00, #e52e71, #9b00ff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientShift 4s linear infinite, slideDown 1.2s ease forwards;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-text p {
+    max-width: 700px;
+    margin: 30px auto;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #ffe0f5;
+    animation: fadeInUp 1.8s ease forwards;
+    opacity: 0;
+  }
+  
+  /* 🔥 Animations */
+  @keyframes fadeInBackground {
+    0% { opacity: 0; transform: scale(1.05); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes slideDown {
+    0% { transform: translateY(-30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes moveGlow {
+    0% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(360deg) scale(1); }
+  }
+  
+  @keyframes popIn {
+    0% { transform: scale(0.95); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* 📱 Responsive adjustments */
+  @media (max-width: 850px) {
+    .hero-text h1 {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .hero-text h1 {
+      font-size: 30px;
+      max-width: 90%;
+      margin: auto;
+    }
+  
+    .hero-text p {
+      font-size: 14px;
+      margin: 15px auto 25px;
+    }
+  }
+  

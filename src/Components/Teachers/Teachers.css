@@ -1,0 +1,188 @@
+.teachers {
+    padding: 60px 30px;
+    background: linear-gradient(135deg, #e0f7fa, #f0faff);
+    text-align: center;
+  }
+  
+  .teachers-heading {
+    font-size: 2.8rem;
+    color: #001f3f;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Grid Responsive Layout */
+  .teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  @media (min-width: 576px) {
+    .teachers-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .teachers-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .teachers-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Teacher Card Styling */
+  .teacher-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    transform-style: preserve-3d;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .teacher-card:hover {
+    transform: translateY(-10px) scale(1.02) rotateX(3deg);
+    box-shadow: 0 16px 40px rgba(0, 204, 255, 0.4);
+    background: linear-gradient(135deg, #212ea0 30%, #00ccff 90%);
+  }
+  
+  /* Image */
+  .teacher-img-wrapper {
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .teacher-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .teacher-card:hover .teacher-img {
+    transform: scale(1.05);
+  }
+  
+  /* Social Links Slide In */
+  .social-links {
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 255, 0.3);
+    padding: 12px 10px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: right 0.4s ease-in-out;
+    z-index: 1;
+  }
+  
+  .teacher-card:hover .social-links {
+    right: 0;
+  }
+  
+  .social-links a {
+    color: white;
+    font-size: 1.1rem;
+    background-image: linear-gradient(135deg, #ff006e, #6e00ff);
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.2);
+  }
+  
+  /* Text Content */
+  .teacher-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 15px 0 5px;
+    color: blue;
+    z-index: 2;
+    position: relative;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .teacher-card p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 15px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  /* Button Wrapper */
+  .teachers-btn-wrapper {
+    margin-top: 50px;
+  }
+  
+  /* Button */
+  .experts-btn {
+    background: linear-gradient(135deg, #6e00ff, #ff006e);
+    color: #fff;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .experts-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: left 0.5s ease;
+    z-index: 0;
+  }
+  
+  .experts-btn:hover::after {
+    left: 100%;
+  }
+  
+  .experts-btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #ffcc00, #ff003c, #ff6600);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .experts-btn .arrow {
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  .experts-btn:hover .arrow {
+    transform: translateX(6px);
+  }
+  
