@@ -109,7 +109,7 @@ Ensure the following are installed:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/edify.git
+git clone https://github.com/Anamicca23/edify.git
 
 # Navigate into the project
 cd edify
