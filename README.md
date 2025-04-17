@@ -93,6 +93,8 @@ Ensure the platform is intuitive for every type of user, including students, fac
 
 ---
 
+## SEE ONLINE:
+link : https://edify-rho.vercel.app/
 
 ## 🚀 Getting Started
 
