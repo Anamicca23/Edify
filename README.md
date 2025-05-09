@@ -60,29 +60,58 @@ Ensure the platform is intuitive for every type of user, including students, fac
 ## 📦 Core Features
 
 🔹 **Homepage**
+
+![Screenshot 2025-05-09 225614](https://github.com/user-attachments/assets/4997ce29-b006-4dbe-941b-a467a6ebc172)
+
 - Hero section with mission statement and call to action.
 - Smooth navigation to explore the entire platform.
 
 🔹 **Programs Offered**
+
+![Screenshot 2025-05-09 225643](https://github.com/user-attachments/assets/5e7b3413-af56-4e3b-935d-586519491d49)
+
+
 - Detailed sections for Graduation, Master's, and Post-Graduate programs.
 - Modular cards displaying course information.
 
 🔹 **About Us**
+
+![Screenshot 2025-05-09 225709](https://github.com/user-attachments/assets/dc594e7b-7265-4d0c-838b-d2942183c99b)
+
 - Highlights university philosophy, mission, and vision.
 
 🔹 **Virtual Campus Gallery**
+
+![Screenshot 2025-05-09 225740](https://github.com/user-attachments/assets/84c05a98-22e5-4ad9-b72d-c52325faec83)
+
 - Dynamic photo carousel showcasing campus life.
 
 🔹 **Facilities**
+
+![Screenshot 2025-05-09 225817](https://github.com/user-attachments/assets/32769fa0-f521-48a3-833a-62680e39823e)
+
+
 - Interactive section covering infrastructure (library, park, canteen, swimming pool, etc.)
 
 🔹 **Teacher Profiles**
+
+![Screenshot 2025-05-09 225838](https://github.com/user-attachments/assets/a3fbe9f8-6b81-47d5-9203-b6b560653bfe)
+
+
 - Cards showcasing faculty members, their expertise, and subjects.
 
 🔹 **Student Testimonials**
+
+![Screenshot 2025-05-09 225910](https://github.com/user-attachments/assets/0cdf0196-8fa0-4881-89e6-d86b0d446163)
+
+
 - Quotes and feedback from real users, giving credibility and trust.
 
 🔹 **Contact Section**
+
+![Screenshot 2025-05-09 225927](https://github.com/user-attachments/assets/d7341a8d-4af7-4975-8b8c-fe6cf2d9745e)
+
+
 - Static or dynamic form integration for inquiries.
 
 🔹 **Fully Responsive UI**
