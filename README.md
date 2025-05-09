@@ -1,3 +1,9 @@
+
+
+https://github.com/user-attachments/assets/f8e40b46-5c8e-408f-93ce-4c5f51f9f813
+
+
+
 # 📘 Edify - An Education Platform (React)
 
 **Edify** is a dynamic and immersive **education platform** built with **React**, tailored to connect students, educators, and institutions in one unified digital environment. It delivers a clean, modern user experience across all devices and focuses on interactive, accessible, and high-quality education for learners of all levels.
