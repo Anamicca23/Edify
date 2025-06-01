@@ -1,3 +1,28 @@
+<h1 align="center">EDIFY</h1>
+
+<p align="center">
+  <em>Empowering education through seamless digital connections.</em>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/last%20commit-may-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/css-63.8%25-blueviolet?style=flat-square" />
+  <img src="https://img.shields.io/badge/languages-3-blue?style=flat-square" />
+</p>
+
+<p align="center">
+  <em>Built with the tools and technologies:</em>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/JSON-black?logo=json&logoColor=white&style=flat-square" />
+  <img src="https://img.shields.io/badge/Markdown-black?logo=markdown&logoColor=white&style=flat-square" />
+  <img src="https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=white&style=flat-square" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square" />
+  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat-square" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=flat-square" />
+  <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white&style=flat-square" />
+</p>
 
 
 https://github.com/user-attachments/assets/f8e40b46-5c8e-408f-93ce-4c5f51f9f813
