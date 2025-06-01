@@ -299,7 +299,7 @@ This project is open-sourced under the [MIT License](LICENSE).
 
 
 <p align="center">
-  <a href="## 🧾 About Edify">
+  <a href="#top">
     <img src="https://img.shields.io/badge/⬅️%20Return-blue?style=for-the-badge" alt="Return Button"/>
   </a>
 </p>
