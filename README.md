@@ -296,3 +296,11 @@ This project is open-sourced under the [MIT License](LICENSE).
 ---
 
 > Built with 💙 using **React** to reshape the future of education.
+
+
+<p align="center">
+  <a href="## 🧾 About Edify">
+    <img src="https://img.shields.io/badge/⬅️%20Return-blue?style=for-the-badge" alt="Return Button"/>
+  </a>
+</p>
+
