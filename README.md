@@ -24,6 +24,7 @@
   <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white&style=flat-square" />
 </p>
 
+---
 
 https://github.com/user-attachments/assets/f8e40b46-5c8e-408f-93ce-4c5f51f9f813
 
@@ -81,6 +82,72 @@ Ensure the platform is intuitive for every type of user, including students, fac
 | **Deployment**    |  Vercel / GitHub Pages                                           |
 
 ---
+
+
+## 📁 Project Structure
+
+```
+edify/
+├── public/                        # Static assets served directly (favicon, manifest, etc.)
+│   └── index.html                 # Root HTML file
+├── src/                           # All source files
+│   ├── assets/                    # Static media assets like images and videos
+│   │   ├── images/                # All PNGs, JPGs, icons
+│   │   └── videos/                # MP4 and other video files
+│   ├── components/                # Reusable shared UI components
+│   │   ├── Navbar/                # Navigation bar component
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Navbar.css
+│   │   ├── Footer/                # Footer section
+│   │   │   ├── Footer.jsx
+│   │   │   └── Footer.css
+│   │   ├── Title/                 # Title header component
+│   │   │   ├── Title.jsx
+│   │   │   └── Title.css
+│   │   └── VideoPlayer/           # Embedded video component
+│   │       ├── Videoplayer.jsx
+│   │       └── Videoplayer.css
+│   ├── pages/                     # Route-level pages
+│   │   ├── Home/                  # Homepage content (Hero, etc.)
+│   │   ├── About/                 # About page content
+│   │   │   ├── About.jsx
+│   │   │   └── About.css
+│   │   ├── Campus/                # Campus info section
+│   │   │   ├── Campus.jsx
+│   │   │   └── Campus.css
+│   │   ├── Contact/               # Contact form and info
+│   │   │   ├── Contact.jsx
+│   │   │   └── Contact.css
+│   │   ├── Facilities/            # School/College facility info
+│   │   │   ├── Facilities.jsx
+│   │   │   └── Facilities.css
+│   │   ├── Programs/              # Program offerings
+│   │   │   ├── Programs.jsx
+│   │   │   └── Program.css
+│   │   ├── Teachers/              # Teachers profiles
+│   │   │   ├── Teachers.jsx
+│   │   │   └── Teachers.css
+│   │   └── Testimonials/          # User testimonials or feedback
+│       │   ├── Testimonials.jsx
+│       │   └── Testimonials.css
+│   ├── data/                      # Static data (JS/JSON) to populate UI
+│   │   ├── teachers.json
+│   │   ├── programs.json
+│   │   └── testimonials.json
+│   ├── styles/                    # Global styles or shared variables
+│   │   └── index.css
+│   ├── App.jsx                    # Main app component with routing
+│   └── main.jsx                   # ReactDOM entry point
+├── .gitignore
+├── README.md                     # Project overview, setup instructions
+├── eslint.config.js             # ESLint configuration
+├── vite.config.js               # Vite build configuration
+├── package.json
+├── package-lock.json
+```
+
+---
+
 
 ## 📦 Core Features
 
@@ -193,26 +260,6 @@ yarn start
 Your app should now be running at `http://localhost:3000`.
 
 ---
-
-## 📁 Project Structure
-
-```
-edify/
-├── public/             # Static assets like index.html, images
-├── src/
-│   ├── assets/         # All visual assets (logos, gallery images)
-│   ├── components/     # Shared UI components (Navbar, Footer, Cards, etc.)
-│   ├── pages/          # Route-specific pages (Home, About, Programs, etc.)
-│   ├── data/           # JSON or JS files for dynamic rendering (teachers, programs)
-│   ├── App.js          # Main component with routes
-│   └── index.js        # React DOM entry point
-├── .gitignore
-├── package.json
-└── README.md
-```
-
----
-
 ## ✅ To-Do / Future Enhancements
 
 - 🔐 Authentication system for students and teachers
